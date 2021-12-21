@@ -1,0 +1,7 @@
+siexamqacategorization\consumer\ConsumerService.class
+siexamqacategorization\repository\AnswerRepository.class
+siexamqacategorization\kafka\TransactionService.class
+siexamqacategorization\ProducerService.class
+siexamqacategorization\Controller\AnswerController.class
+siexamqacategorization\model\Answers.class
+siexamqacategorization\SiExamQaCategorizationApplication.class
