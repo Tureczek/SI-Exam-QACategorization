@@ -22,6 +22,7 @@ public class ProducerService {
     private static String queueName = null; // never used here
     private final static String EXCHANGE_NAME = "direct-answer-exchange";
     private static String routingKey = "answer";
+    private static final String TOPIC = "questions";
 
 
     public void createQueue(String message) throws Exception
@@ -39,19 +40,13 @@ public class ProducerService {
     }
 
 
-
-
-    /*
-
-    private static final String TOPIC = "similar-questions";
     @Autowired
     private KafkaTemplate<String, String> template;
 
     public void sendMessage(String message){
         template.send(TOPIC, message);
-        logger.info("### ProducerService sends message [{}]", message);
+        logger.info("ProducerService sends message [{}]", message);
         template.flush();
     }
 
- */
 }
